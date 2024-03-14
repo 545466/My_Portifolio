@@ -4,10 +4,10 @@ const Footer = () => {
   return (
     <div>
       <div className='flex justify-center py-5 text-Mid-Blue'>
-        <FaGithub onClick={"https://github.com/5454"} className=' text-2xl lg:text-3xl' />
-        <FaLinkedin className=' text-2xl lg:text-3xl mx-10' />
-        <FaPhone className=' text-2xl lg:text-3xl mr-10' />
-        <FaWhatsapp className=' text-2xl lg:text-3xl' />
+        <a href="https://github.com/545466"><FaGithub className=' text-xl lg:text-2xl' /></a>
+        <a href="https://www.linkedin.com/in/Tony-Oloriogun-b2261025a"><FaLinkedin className=' text-xl lg:text-2xl mx-10' /></a>
+        <a href="tel:09157560956"><FaPhone className=' text-xl lg:text-2xl mr-10' /></a>
+        <a href=""><FaWhatsapp className=' text-xl lg:text-2xl ' /></a>
       </div>
       <div className=' m-auto w-1/4 h-1 rounded-xl bg-Mid-Blue'></div>
       <p className='lg:text-xl text-Mid-Blue font-semibold text-center py-5'>© Copyright 2024 . Made by Dev. Tony</p>

@@ -5,8 +5,10 @@ export default {
     colors: {
       "White" : '#fff',
       "Dark_Blue" : '#00001d',
-      "Mid-Blue" : '#020227',
+      "Mid-Blue" : '#263238',
+      "Lemon" : '#c6ff00',
       "Gray" : '#808080',
+      "lGray" : '#ebeaea',
       "Black" : '#000000'
     },
     extend: {},

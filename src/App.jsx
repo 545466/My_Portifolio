@@ -14,7 +14,7 @@ function App() {
     <header>
       <div className=" border-b-2 border-White bg-Mid-Blue flex justify-between items-center h-20 font-bold text-White lg:text-Violet">
         <div className="flex justify-between">
-          <h1 className="text-xl pl-10 lg:pl-20 lg:text-3xl">DevTony</h1>
+          <h1 className="text-xl pl-10 lg:pl-20 lg:text-3xl">Dev <span className="text-Lemon">Tony</span> </h1>
         </div>
         
         <div className= {open ? "absolute w-full px-10 top-20 text-lg bg-White text-Mid-Blue   block text-center " : "hidden lg:flex"}  >
