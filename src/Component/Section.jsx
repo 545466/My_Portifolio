@@ -1,9 +1,6 @@
 import React from "react";
-import { FaNodeJs } from "react-icons/fa";
 import images from "./Images";
-import img6 from "../assets/images/Screenshot 2024-02-25 at 15-46-22 Vite React.png";
-import img7 from "../assets/images/Screenshot 2024-02-26 at 11-40-26 Vite React.png";
-
+import { motion } from "framer-motion";
 const Section = () => {
   const skills = [
     "Html5",
@@ -16,7 +13,12 @@ const Section = () => {
   ];
   return (
     <div className=" text-left py-20 px-10 lg:px-20">
-      <div className="flex flex-col lg:flex-row ">
+      <motion.div
+        className="flex flex-col lg:flex-row "
+        initial={{ translateX: 500 }}
+        whileInView={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 1 }}
+      >
         <div className="lg:mr-10">
           <h1 className=" text-Mid-Blue text-xl font-bold">ABOUT ME</h1>
           <p className="pt-1 pb-5 lg:text-xl">
@@ -46,17 +48,23 @@ const Section = () => {
             })}
           </div>
         </div>
-      </div>
+      </motion.div>
       <h1 className="text-Mid-Blue text-xl font-bold pt-20 pb-5">Projects</h1>
       <div className=" lg:wrap lg:justify-between">
         {images.map((image) => {
           return (
-            <div
+            <motion.div
               className="flex lg:items-center flex-col bg-Mid-Blue text-White mb-12 p-5 rounded-xl border-Mid-Blue border-2 lg:flex-row"
               key={images.id}
               {...images}
+              initial={{ translateX: 500 }}
+              whileInView={{ opacity: 1, translateX: 0 }}
+              transition={{ duration: 1 }}
             >
-              <img className="rounded-xl lg:w-4/5" src={image.img} />
+              <a href={image.Link}>
+                {" "}
+                <img className="rounded-xl lg:w-4/5" src={image.img} />{" "}
+              </a>
               <div className="lg:pl-10">
                 <h1 className=" font-semibold pt-5 lg:text-2xl">
                   {image.head}
@@ -72,7 +80,7 @@ const Section = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>
