@@ -1,13 +1,27 @@
 import React from "react";
 import Dev from "../assets/images/Dev.svg";
-import { motion } from "framer-motion";
+import { useRef, useEffect } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
+
 const Hero = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true});
+  const mainControls = useAnimation()
+  useEffect(()=>{
+    if(isInView){
+      mainControls.start("visible");
+    }
+  }, [isInView])
   return (
-    <div className=" bg-Mid-Blue py-20 lg:px-20 lg:py-0">
+    <div ref={ref} className=" bg-Mid-Blue py-20 lg:px-20 lg:py-0">
       <motion.div className="flex flex-col items-center lg:items-center lg:flex-row lg:justify-between"
-      initial= {{ translateX:500}}
-      whileInView = {{opacity: 1, translateX:0}}
-      transition = {{duration: 1}}>
+      variants={{
+        hidden: { opacity: 0, y:75 },
+        visible: { opacity: 1, y:0 },
+      }}
+      initial = "hidden"
+      animate = {mainControls}
+      transition={{ duration: 0.5, delay: 0.25 }}>
         <div className="text-center lg:text-left">
           <h1 className="text-3xl text-Lemon font-bold lg:text-6xl">
             <span className="text-Gray">Hi, I'm Tony</span><br /> a Frontend{" "}
