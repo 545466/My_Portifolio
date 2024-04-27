@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import images from "./Images";
 import { motion, useAnimation, useInView } from "framer-motion";
 const Section = () => {
@@ -53,7 +53,7 @@ const Section = () => {
           <div className="flex flex-wrap">
             {skills.map((skills) => {
               return (
-                <p className="text-White bg-Mid-Blue mt-5 mr-5 px-5 py-1 rounded-2xl lg:h-10">
+                <p key={skills} className="text-White bg-Mid-Blue mt-5 mr-5 px-5 py-1 rounded-2xl lg:h-10">
                   {skills}
                 </p>
               );
@@ -65,8 +65,7 @@ const Section = () => {
       <div className=" lg:wrap lg:justify-between">
         {images.map((image) => {
           return (
-            <div>
-              <motion.div
+            <motion.div
                 ref={ref}
                 className="flex lg:items-center flex-col bg-Mid-Blue text-White mb-12 p-5 rounded-xl border-Mid-Blue border-2 lg:flex-row"
                 key={images.id}
@@ -99,8 +98,7 @@ const Section = () => {
                   </div>
                 </div>
               </motion.div>
-            </div>
-          );
+          )
         })}
       </div>
     </div>
