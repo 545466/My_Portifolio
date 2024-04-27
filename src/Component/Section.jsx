@@ -88,11 +88,11 @@ const Section = () => {
                   </h1>
                   <p className="py-3 lg:text-xl">{image.body}</p>
                   <p className="font-semibold">{image.lang}</p>
-                  <div className="flex pt-3">
-                    <button className="text-Mid-Blue my-5 font-semibold bg-White px-5 lg:px-10 py-2 rounded-3xl mr-5 lg:mr-5 lg:mt-10">
+                  <div className="flex pt-3">  
+                    <a href={image.Link}><p className="text-Mid-Blue my-5 font-semibold bg-White px-5 lg:px-10 py-1 rounded-3xl mr-5 lg:mr-5 lg:mt-10">
                       Live Site
-                    </button>
-                    <button className="text-Mid-Blue my-5 font-semibold bg-White px-5 lg:px-10 py-2 rounded-3xl lg:mt-10">
+                    </p></a>
+                    <button className="text-Mid-Blue my-5 font-semibold bg-White px-3 lg:px-10 py-1 rounded-3xl lg:mt-10">
                       Repository
                     </button>
                   </div>
