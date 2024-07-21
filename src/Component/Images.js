@@ -1,7 +1,9 @@
-import img6 from '../assets/images/Screenshot 2024-02-25 at 15-46-22 Vite React.png'
-import img7 from '../assets/images/Screenshot 2024-02-26 at 11-40-26 Vite React.png'
+import img6 from '../assets/images/Easybanks.png'
+import img7 from '../assets/images/Insure.png'
+import img8 from '../assets/images/RestCoun.png'
+
 const images = [{
-    img: img6,
+    img: img8,
     head: "Rest_Coutries",
     body: "Rest countries is a website that display the details about countries using an API and also have a search input field and a color theme switch.",
     lang: "ReactJs | Tailwind Css | API",

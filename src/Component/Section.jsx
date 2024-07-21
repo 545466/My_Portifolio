@@ -15,6 +15,8 @@ const Section = () => {
     "Css3",
     "Javascript",
     "ReatJs",
+    "NextJs",
+    "Firebase",
     "Tailwind css",
     "Git/Github",
     "Responsive Design",
@@ -89,10 +91,10 @@ const Section = () => {
                   <p className="py-3 lg:text-xl">{image.body}</p>
                   <p className="font-semibold">{image.lang}</p>
                   <div className="flex pt-3">  
-                    <a href={image.Link}><p className="text-Mid-Blue my-5 font-semibold bg-White px-5 lg:px-10 py-1 rounded-3xl mr-5 lg:mr-5 lg:mt-10">
+                    <a href={image.Link}><p className="text-Mid-Blue my-5 font-semibold bg-White px-5 lg:px-10 py-2 rounded-3xl mr-5 lg:mr-5 lg:mt-10">
                       Live Site
                     </p></a>
-                    <button className="text-Mid-Blue my-5 font-semibold bg-White px-3 lg:px-10 py-1 rounded-3xl lg:mt-10">
+                    <button className="text-Mid-Blue my-5 font-semibold bg-White px-3 lg:px-10 py-2 rounded-3xl lg:mt-10">
                       Repository
                     </button>
                   </div>
