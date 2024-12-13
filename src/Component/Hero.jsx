@@ -12,9 +12,9 @@ const Hero = () => {
     }
   }, [isInView]);
   return (
-    <div ref={ref} className=" bg-Mid-Blue py-20 lg:px-20 lg:py-0">
+    <div ref={ref} className=" bg-Mid-Blue py-20 lg:px-20 lg:py-10">
       <motion.div
-        className="flex flex-col items-center lg:items-center lg:flex-row lg:justify-between"
+        className="flex flex-col items-center lg:items-center lg:flex-row lg:justify-between lg:mx-20"
         variants={{
           hidden: { opacity: 0, y: 75 },
           visible: { opacity: 1, y: 0 },
@@ -24,7 +24,7 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.25 }}
       >
         <div className="text-center lg:text-left">
-          <h1 className="text-3xl text-Lemon font-bold lg:text-6xl">
+          <h1 className="text-3xl text-Lemon font-bold lg:text-5xl">
             <span className="text-Gray">Hi, I'm Tony</span>
             <br /> a Frontend <br /> Web Developer
           </h1>
@@ -32,7 +32,7 @@ const Hero = () => {
             Bringing your idea to life through coding
           </p>
           <a
-            href="https://wa.me/09078042113"
+            href="https://wa.me/09157560956"
             className="text-Dark_Blue my-5 font-semibold bg-White px-10 py-2 rounded-3xl lg:mt-10"
           >
             Let's Talk

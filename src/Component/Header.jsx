@@ -1,11 +1,12 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import cv from "../assets/Oloriogun_Tony _Frontend_Developer_Resume.pdf"
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <header>
-      <div className=" border-b-2 border-White bg-Mid-Blue flex justify-between items-center h-20 font-bold text-White lg:text-Violet">
+      <div className=" border-b-2 border-White bg-Mid-Blue flex justify-between items-center h-20 font-bold text-White lg:text-Violet px-20">
         <div className="flex justify-between">
           <h1 className="text-xl pl-10 lg:pl-20 lg:text-3xl">
             Dev <span className="text-Lemon">Tony</span>{" "}
@@ -27,7 +28,7 @@ const Header = () => {
               <a href="">Contact</a>
             </li>
             <li className="mx-4 pb-5 lg:pr-20 lg:pb-0">
-              <a href="">Resume</a>
+              <a download={cv} href={cv}>Resume</a>
             </li>
           </div>
         </div>
