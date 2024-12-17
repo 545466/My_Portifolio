@@ -9,7 +9,7 @@ const Footer = () => {
         <a href="https://wa.me/09157560956"><FaWhatsapp className=' text-xl lg:text-2xl ' /></a>
       </div>
       <div className=' m-auto w-1/4 h-1 rounded-xl bg-Mid-Blue'></div>
-      <p className='lg:text-xl text-Mid-Blue font-semibold text-center py-5'>© Copyright 2024 . Made by Dev. Tony</p>
+      <p className='lg:text-xl text-Mid-Blue font-semibold text-center py-5'>© Made by Dev. Tony</p>
     </div>
   )
 }
