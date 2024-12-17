@@ -22,6 +22,7 @@ const Section = () => {
     "Firebase",
     "Tailwind css",
     "Git/Github",
+    "Framer Motion",
     "Responsive Design",
   ];
   return (
